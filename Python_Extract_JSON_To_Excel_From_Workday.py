@@ -36,14 +36,14 @@ if not WORKDAY_USER or not WORKDAY_PASS:
 AUTH = (WORKDAY_USER, WORKDAY_PASS)
 
 # Where to drop JSON + Excel
-OUTPUT_JSON_DIR = Path(r"C:\00_MAIN\000_DataSpring 2.0\000_WD CE Updates\00_JSON Files\FV8")
-OUTPUT_XLSX_DIR = Path(r"C:\00_MAIN\000_DataSpring 2.0\000_WD CE Updates\00_JSON Files\FV8")
+OUTPUT_JSON_DIR = Path(r"C:\00_MAIN\000_DataSpring 2.0\000_WD CE Updates\00_JSON Files\FV8") # path for the JSON output file
+OUTPUT_XLSX_DIR = Path(r"C:\00_MAIN\000_DataSpring 2.0\000_WD CE Updates\00_JSON Files\FV8") # path for the Excel output file
 
 # Optional: choose specific columns; set to None to export ALL columns
 
 COLUMNS_TO_EXTRACT = None
 # Example:
-# COLUMNS_TO_EXTRACT = ["ClientNbr", "Customer_WID"]
+# COLUMNS_TO_EXTRACT = ["ClientNbr", "Customer_WID"] # replace these with the actual column names you want to extract, or set to None to get all columns
 
 # ----------------------------
 # HELPERS
